@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>XO Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>XO PRO</h1>
+
+  <div class="controls">
+    <select id="mode" onchange="changeMode()">
+      <option value="friend">👥 ضد صديق</option>
+      <option value="computer">🤖 ضد الكمبيوتر</option>
+    </select>
+
+    <select id="level">
+      <option value="easy">سهل</option>
+      <option value="medium">متوسط</option>
+      <option value="hard">صعب</option>
+    </select>
+  </div>
+
+  <div class="score">
+    <div>X : <span id="scoreX">0</span></div>
+    <div>تعادل : <span id="scoreD">0</span></div>
+    <div>O : <span id="scoreO">0</span></div>
+  </div>
+
+  <div class="board">
+    <div class="cell" onclick="play(0)"></div>
+    <div class="cell" onclick="play(1)"></div>
+    <div class="cell" onclick="play(2)"></div>
+    <div class="cell" onclick="play(3)"></div>
+    <div class="cell" onclick="play(4)"></div>
+    <div class="cell" onclick="play(5)"></div>
+    <div class="cell" onclick="play(6)"></div>
+    <div class="cell" onclick="play(7)"></div>
+    <div class="cell" onclick="play(8)"></div>
+  </div>
+
+  <button onclick="restart()">إعادة الجولة 🔄</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
